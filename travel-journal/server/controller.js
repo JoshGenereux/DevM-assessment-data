@@ -261,7 +261,7 @@ module.exports = {
         // const {nameInput, countrySelect} = req.value
         console.log(req)
         sequelize.query(
-            `SELECT cities.city_id, cities.name, cities.rating, countries.country_id, countries.name
+            `SELECT cities.city_id, cities.name city, cities.rating, countries.country_id, countries.name country
                    FROM cities
                    JOIN countries ON cities.country_id = countries.country_id
                    ORDER BY rating DESC`)
