@@ -258,7 +258,6 @@ module.exports = {
     },
 
     getCities: (req, res) => {
-        // const {nameInput, countrySelect} = req.value
         console.log(req)
         sequelize.query(
             `SELECT cities.city_id, cities.name city, cities.rating, countries.country_id, countries.name country
